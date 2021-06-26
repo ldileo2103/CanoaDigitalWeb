@@ -1,0 +1,246 @@
+/*Se realiza CSS dividiento en Caracterisitcas que afectan a toda la pagina y luego se divide en secciones respetanto el orden visual en la web.*/
+
+
+/*Caracteristicas generales*/
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:#FCF7FF;
+
+}
+section {
+    padding: 50px 0;
+}
+
+.topmargin-xs { margin-top: 60px;}
+.topmargin-sm { margin-top: 30px;}
+.topmargin-lg { margin-top: 15px;}
+/*Fin de Caracteristicas generales*/
+/*Fuesntes*/
+h1{
+    
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 80px;
+    padding-top: 120px;
+}
+
+h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #F25D27;
+}
+
+p{
+    font-size: 18px;
+    line-break: 1.8;
+    margin-bottom: 0;
+}
+
+button{
+    color: black;
+}
+/*Fin de Fuentes*/
+/*Boton Flotante*/
+.whatsapp {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+
+.whatsapp-icon {
+  margin-top:13px;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+/*Fin de Boton Flotante*/
+/*MENU DE NAVEGACION*/
+.navbar {
+    background-color: #0E0C17;
+    box-shadow: 0, 2px, 4px, 0 rgba(0,0, 0, .05);
+    min-height: 59px;
+}
+.nav-link{
+    color: #FCF7FF;
+}
+.nav-link:hover {
+    color: #F25D27;
+}
+ion-icon {    
+    color:#F25D27;
+    font-size: 25px;
+  }
+/*FIN DE MENU DE NAVEGACION*/
+/*Seccion 1 (inicio)*/
+#hero{
+    background-image: url("../img/hero.png");
+    background-size: cover;
+    padding-top: 90px;
+    min-height: 700px;
+    color: #FCF7FF;
+}
+#hero h1{
+  animation-duration: 2s;
+  animation-name: aparecer; 
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+#hero p{
+  animation-duration: 8s;
+  animation-name: aparecer; 
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.content-center{
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+/*Fin seccion 1 (inicio)*/
+/*Seccion Nosotros*/
+
+
+#seccionNosotros{
+    margin: 10px;
+}
+#seccionNosotros h3{
+    color:#1335F2;
+}
+#seccionNosotros p{
+    color:#1335F2;
+    margin-bottom: -70px;
+}
+#seccionNosotros a:hover{
+    text-decoration: none;
+}
+ /*Fin Seccion Nosotros*/
+
+/*Nuestros Servicios*/
+#seccionServicios{
+  background-image: url("../img/seccion1.png"); 
+  background-repeat: no-repeat;     
+  background-size: cover;                               
+}
+#tituloServivios{
+  margin-bottom: -80px;
+}
+
+.carousel {
+  min-height: 240px;
+  padding: 40px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.carousel-item h5 {
+  color:#FCF7FF;
+}
+
+.carousel-item p {
+  font-size: 26px;
+  font-weight: 400;
+-webkit-text-fill-color:  #0E0C17;
+-webkit-text-stroke: 1px #FCF7FF;
+}
+
+.carousel-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/*Fin Nuestros Servicios*/
+/*Team*/
+
+.member-container {
+  position: relative;
+  margin: 10px 0;
+}
+
+.member-details {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+.member-details span {
+  font-size: 14px;
+}
+.member-details i {
+  padding: 0 5px;
+}
+
+.member-details ion-icon {
+  color:#FCF7FF;
+}
+.member-details h5, span  {
+  color:#FCF7FF;
+}
+
+.member-container  {
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.member-container:hover  {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+/*Fin de Team*/
+
+/*Footer*/
+
+footer{
+  background-color:#1335F2;
+}
+
+footer ion-icon {
+  color:#FCF7FF;
+}
+footer  h5, span  {
+  color:#FCF7FF;
+}
+
+footer {
+  padding: 9px 0;
+  text-align: center; 
+}
+ footer a{
+    color: #F25D27;
+}
+footer .list-inline .list-inline-item {
+  padding: 10px 15px;
+}
+/*Fin de Footer*/
+
+/*RESOLUCION PARA DISPOSITIVOS*/
+@media (min-width: 576px) { 
+    h1 { font-size: 40px; line-height: normal;}
+ }
+@media (min-width: 768px) { 
+  h1 { font-size: 40px; line-height: normal;}
+}
+@media (min-width: 992px) { 
+  h1 { font-size: 40px; line-height: normal;}
+}
+@media (min-width: 1200px) { 
+  h1 { font-size: 40px; line-height: normal;}
+}
